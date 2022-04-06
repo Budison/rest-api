@@ -1,7 +1,13 @@
-== resttask
-==== Technology used
-Apache Maven 3.8.4 (9b656c72d54e5bacbed989b64718c159fe39b537)
-Maven home: /home/mariusz/.sdkman/candidates/maven/current
-Java version: 17.0.2, vendor: Oracle Corporation, runtime: /home/mariusz/.sdkman/candidates/java/17.0.2-open
-Default locale: en_US, platform encoding: UTF-8
-OS name: "linux", version: "5.14.0-1031-oem", arch: "amd64", family: "unix"
+= REST
+:client-url: https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpClient.html
+:server-url: https://docs.oracle.com/en/java/javase/17/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpServer.html
+:request-url: https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpRequest.html
+:response-url: https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpRequest.html
+
+== Task 1
+Using **Java {client-url}[HTTP Client]** send `GET`, `POST`, `PUT` {request-url}[requests] to proper endpoint on `https://reqres.in/`.
+You can find documentation at the given address.
+
+== Task 2
+Using **Java {server-url}[HTTP Server]** create a simple endpoint `/hello` that will accept {request-url}[requests] from your client and send
+back some `string` {response-url}[response] with proper code.
